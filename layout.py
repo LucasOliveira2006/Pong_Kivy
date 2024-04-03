@@ -15,9 +15,7 @@ class MainLayout(App):
         #Definindo o layout da aplicação
         self.cols = 2 
 
-        self.sub_layout = GridLayout()
-        self.sub_layout.cols = 2
-
+      
         ######################################################
         #Cria a Label Nome
         self.nome_label = Label(text= 'Nome: ')
@@ -75,7 +73,5 @@ class LanchoneteApp(App):
     def build(self):
         return MainLayout
         
-
-
 if __name__ == '__main__':
     LanchoneteApp.run()
