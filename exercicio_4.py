@@ -26,13 +26,13 @@ class mainGridLayout(GridLayout):
         self.terceiro_layout.add_widget(Button(text="button 8"))
         self.add_widget(self.terceiro_layout)
 
-        self.terceiro_layout = GridLayout(cols = 3)
+        self.quarto_layout = GridLayout(cols = 3)
         
-        self.terceiro_layout.add_widget(Button(text="button 9"))
-        self.terceiro_layout.add_widget(Button(text="button 10"))
-        self.terceiro_layout.add_widget(Button(text="button 11"))
+        self.quarto_layout.add_widget(Button(text="button 9"))
+        self.quarto_layout.add_widget(Button(text="button 10"))
+        self.quarto_layout.add_widget(Button(text="button 11"))
         
-        self.add_widget(self.terceiro_layout)
+        self.add_widget(self.quarto_layout)
 
 
 class GridLayoutApp(App):
