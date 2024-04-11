@@ -6,10 +6,20 @@ from kivy.uix.button import Button
 class mainGridLayout(GridLayout):
     def __init__(self, **kwargs):
         super(mainGridLayout, self).__init__(**kwargs)
-
+        #Denine o numero de colunas
         self.cols = 2
+        #Define o espaçamento entre os widgets
         self.spacing = 10
+        #Define o9 padding do GridLayout
         self.padding = 30
+        #define altura padrao das linhas(como se fosse a altura mínima)
+        self.row_default_height = 100
+        #Define a largura padrão das linhas(como se fosse a largura mínima)
+        self.col_default_width = 200
+        # Força a altura padrão das linhas
+        self.row_force_default = True
+        # Força a largura padrão das linhas
+        self.col_force_default =True
 
         self.add_widget(Button(text="Main GridLayout 1"))
         self.segundo_layout = GridLayout(cols = 1, spacing = 10)

@@ -1,0 +1,40 @@
+# Kivy 1.11.1
+
+<Button>:
+    font_size: 50
+    bold: True
+    italic: True
+
+<MainGridLayout>:
+
+    cols:2
+    spacing:10 
+    padding:30  
+    
+    Button:
+        text: 'Button1'
+        
+    GridLayout:
+        cols: 1
+
+        Button:
+            text: 'Button 2'
+
+        Button:
+            text: 'Button 3'
+
+        Button:
+            text: 'Button 4'
+    
+    SecondGridLayout:
+        cols: 2
+    
+        Button:
+            text: 'Button 5'
+    
+        Button:
+            text: 'Button 6'
+            #Usando sitema de cores com RGBA(Opacidade)
+            #color: 1, 0, 0, 1
+            #Usando sistema de cores com Hexadecimal
+             color: "#FF0000"
