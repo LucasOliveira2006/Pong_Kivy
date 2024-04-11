@@ -16,6 +16,7 @@ class MainBoxLayout(BoxLayout):
         self.remove_text = Button(text= "remove text label")
         self.add_widget(self.remove_text)
         self.remove_text.bind(on_press=self.remove_text_label)
+    
     def add_text_label(self, instance):
         self.add_widget(Label(text="texto 1"))
 
@@ -24,8 +25,8 @@ class MainBoxLayout(BoxLayout):
             self.remove_widget(self.children[-1])
     
     
-    def add_text_label(self, **kwargs):
-        pass
+   
+    
 
 
 
